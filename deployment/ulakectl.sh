@@ -47,7 +47,7 @@ start() {
                 --network $NET \
                 -e JAVA_APP_JAR="/home/$QUARKUS_SERVICE/quarkus-run.jar" \
                 $EXT \
-                registry.access.redhat.com/ubi8/
+                registry.access.redhat.com/ubi8/openjdk-17
         else
             # nah, let's use the default dev build
             DEV_DIR="$ROOT_DIR/$QUARKUS_SERVICE"
